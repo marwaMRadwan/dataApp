@@ -1,0 +1,227 @@
+{
+	"info": {
+		"_postman_id": "77b0e80e-bab6-469b-87a0-48530f11e031",
+		"name": "data app",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "user",
+			"item": [
+				{
+					"name": "register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"fname\":\"Marwa\",\r\n    \"lname\":\"Radwan\",\r\n    \"email\":\"marwaradwan6@gmail.com\",\r\n    \"password\":\"123@Mero456\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/user/register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"user",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "me",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWM3MTAxZWFjYjhhZGFjYTRhYzAyY2UiLCJpYXQiOjE2NDA0MzY2MDd9.6agxn6kxZSlYoo9Dft_W_zvyewfMb-mgQKBucBcAt2A",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"fname\":\"Marwa\",\r\n    \"lname\":\"Radwan\",\r\n    \"email\":\"marwaradwan872@hotmail.com\",\r\n    \"password\":\"123@Mero456\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/user/me",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"user",
+								"me"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "profile  image",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWM3MTAxZWFjYjhhZGFjYTRhYzAyY2UiLCJpYXQiOjE2NDA0MzY4MTR9.3OWiQtXgGw5cKOvWO_K5lSnvUeCY-32toKXtVNlpySs",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "profile",
+									"type": "file",
+									"src": "/D:/marwa/desktop/Roshetah/roshetah-patient/src/assets/img/doc-slide-1.png"
+								}
+							],
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/user/profile",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"user",
+								"profile"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "logout",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWM3MTAxZWFjYjhhZGFjYTRhYzAyY2UiLCJpYXQiOjE2NDA0MzY0NzV9.V_qXTyP730Wt6B4ksMah_N-QahUrVcSPmODoL40FQQQ",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"fname\":\"Marwa\",\r\n    \"lname\":\"Radwan\",\r\n    \"email\":\"marwaradwan872@hotmail.com\",\r\n    \"password\":\"123@Mero456\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/user/logout",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"user",
+								"logout"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "logout from all devices",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWM3MTAxZWFjYjhhZGFjYTRhYzAyY2UiLCJpYXQiOjE2NDA0MzY2MDd9.6agxn6kxZSlYoo9Dft_W_zvyewfMb-mgQKBucBcAt2A",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"fname\":\"Marwa\",\r\n    \"lname\":\"Radwan\",\r\n    \"email\":\"marwaradwan872@hotmail.com\",\r\n    \"password\":\"123@Mero456\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/user/logoutAll",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"user",
+								"logoutAll"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"marwaradwan872@hotmail.com\",\r\n    \"password\":\"123@Mero456\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/user/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"user",
+								"login"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
