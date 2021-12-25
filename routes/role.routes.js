@@ -1,0 +1,10 @@
+const roleController = require("../app/controller/role.controller")
+const auth = require("../app/middleware/auth")
+const router = require("express").Router()
+router.post("/add", auth, roleController.add)
+router.get("/all",auth, roleController.showAll)
+router.get("/all/:roleName",auth, roleController.showSingle)
+router.delete("/all/:roleName",auth, roleController.delete)
+router.delete("/all",auth, roleController.deleteAll)
+router.patch("/all/:roleName",auth, roleController.edit)
+module.exports = router

@@ -1,0 +1,10 @@
+const classController = require("../app/controllers/classification.controller")
+const router = require("express").Router()
+router.post("/add", classController.add)
+router.get("/all", classController.showAll)
+router.get("/all/:id", classController.showSingle)
+router.post("/all/:id/addItem", classController.addItem)
+router.delete("/all/:id", classController.delete)
+router.delete("/all", classController.deleteAll)
+// router.patch("/all/:id", classController.edit)
+module.exports = router
